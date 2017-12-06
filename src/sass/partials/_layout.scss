@@ -1,0 +1,42 @@
+.game-bar {
+	background-color: $main-color;
+	border-radius: 10px 10px 0px 0px;
+	bottom: 0;
+	color: #fff;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	
+	div {
+		display: flex;
+		flex-wrap: no-wrap;
+		justify-content: space-between;
+	}
+	@media screen and (min-width: 1200px) {
+
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	width: 80%;
+}
+
+.game-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 115px auto 0;
+	width: 95%;
+
+	@media screen and (min-width: 375px) {
+		margin: 130px auto 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 180px auto 0;
+		max-width: 1200px;
+	}
+}

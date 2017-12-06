@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $color-base;
+	font: 21px $main-font;
+	
+}
+
+button {
+	background-color: transparent;
+	border: 2px solid $color-base;
+	border-radius: 5px;
+	color: $color-base;
+	cursor: pointer;
+	font: 18px $main-font;
+	margin: 0 15px;
+	transform: translateY(-50%);
+	padding: 5px 10px;
+	position: relative;
+		top: 50%;
+}
+
+button:hover {
+	color: #000;
+	background-color: $main-color;
+}
+

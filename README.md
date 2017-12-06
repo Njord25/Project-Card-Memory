@@ -1,2 +1,2 @@
-# Project-Card-Memory
-Final-Project
+# Game-memory-card
+Homework-2-Responsive-Design
