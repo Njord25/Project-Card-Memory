@@ -7,7 +7,7 @@
     "styleguide": "gulp styleguide",
     "build": "gulp build",
     "clean": "gulp clean",
-    "sw": "gulp generate-service-worker"
+    "sw": "gulp generate-sw"
   },
   "author": "Andrés Díaz Soto <andres.diaz.soto@gmail.com> Student Jordan G Luna",
   "license": "MIT",

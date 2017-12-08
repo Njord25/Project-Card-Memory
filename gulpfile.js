@@ -188,11 +188,11 @@ gulp.task('static', function() {
 //
 // Service workers
 //
-const dist = `${__dirname}/.tmp`;
-gulp.task('generate-service-worker', () => {
+const dist = `${__dirname}/dist`;
+gulp.task('generate-sw', () => {
   return workbox.generateSW({
     globDirectory: dist,
-    globPatterns: ['**/*.{html,css,js,png}', 'static/manifest.json'],
+    globPatterns: ['**/*.{html,css,js,png}'],
     swDest: `${dist}/sw.js`,
     clientsClaim: true,
     skipWaiting: true

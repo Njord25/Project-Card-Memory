@@ -64,7 +64,7 @@ function controller(config) {
             card.toggleCard();
 
             if(stats.flippedCards.length == 2) {
-                setTimeout(checkPair, 1000);
+                setTimeout(checkPair, 500);
             }
         }
     }
@@ -99,7 +99,7 @@ function controller(config) {
     function checkGame() {
         if(matches == pairs) {
             window.clearInterval(timeInterval);
-            messageDisplay.innerText = 'Win!';
+            messageDisplay.innerText = 'Winner!...';
             messageBtn.innerText = 'Play';
             messageBox.classList.remove('hidden');
         }
@@ -122,7 +122,7 @@ function Card(v, id) {
         el.classList.add('card-wrapper');
         el.setAttribute('id', self.id);
         var card = document.createElement('div');
-        card.classList.add('card-3D');
+        card.classList.add('card-rotate');
         var front = document.createElement('span');
         front.setAttribute('class', 'card front card' + self.value);
         var back = document.createElement('span');
@@ -135,7 +135,7 @@ function Card(v, id) {
     };
 
     self.toggleCard = function() {
-        var el = self.element.getElementsByClassName('card-3D')[0];
+        var el = self.element.getElementsByClassName('card-rotate')[0];
         el.classList.toggle('flipped');
     }
 

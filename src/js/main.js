@@ -1,4 +1,4 @@
-var config = {
+let config = {
 	container: document.getElementById('game-wrapper'),
 	scoreDisplay: document.getElementById('score-display'),
 	minuteDisplay: document.getElementById('minute-display'),
@@ -8,10 +8,10 @@ var config = {
 	messageBtn: document.getElementById('message-btn')
 }
 
-var resetBtn = document.getElementById('reset-btn');
+let resetBtn = document.getElementById('reset-btn');
 resetBtn.addEventListener('click', newGame);
 
-var startBtn = document.getElementById('message-btn');
+let startBtn = document.getElementById('message-btn');
 startBtn.addEventListener('click', newGame);
 
 function newGame() {
@@ -24,6 +24,7 @@ function newGame() {
 
 // Service Worker registration
 if ('serviceWorker' in navigator) {
+
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then(registration => {
       // Registration was successful
